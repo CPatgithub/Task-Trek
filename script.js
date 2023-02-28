@@ -14,8 +14,7 @@ class item{
     // This is the constructor method of the "item" class, which is called when a new "item" object is created. 
     // It takes a "name" parameter and calls the "create" method of the same class.
     constructor(name)
-    {
-    // Creating object of class item         
+    {        
         this.create(name);
     }
     create(name)
@@ -54,6 +53,7 @@ function check()
 {
     if(value1.value!="") // Length of the input should be greater than 1
     {
+        // Object of the class item is created
         new item(value1.value);
         setToLocalStore();
         value1.value="";
