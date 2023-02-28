@@ -140,3 +140,9 @@ h1{
         font-weight: bolder;
         font-size: larger;
 }
+
+.item {
+    width: 250;
+    display: flex;
+    justify-content: space-between;
+}
