@@ -15,6 +15,7 @@ class item{
     // It takes a "name" parameter and calls the "create" method of the same class.
     constructor(name)
     {
+    // Creating object of class item         
         this.create(name);
     }
     create(name)
@@ -23,7 +24,7 @@ class item{
         l1.classList.add('item');
         
         // inside the l1 div, Creating div which contains task text and delete button also adding event on delete button called "remove"
-        l1.innerHTML =`<div class="item"><span class="item_input">${name}</span><button onclick="removeEl(this)" class="remove"><i title="Delete task" class="fas fa-trash"></i></button></div>`
+        l1.innerHTML =`<span class="item_input">${name}</span><button onclick="removeEl(this)" class="remove"><i title="Delete task" class="fas fa-trash"></i></button>`
         
         // Showing l1 div inside the container div
         container.appendChild(l1); 
